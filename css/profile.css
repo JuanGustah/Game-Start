@@ -1,26 +1,163 @@
+body{
+    background-color: #eee;
+}
 header{
     background-color: #F35A5E;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:0rem 4rem;
+}
+header img{
+    width:10rem;
+    height: 4rem;
+    padding:0.5rem;
 }
 header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+    height: 11vh;
+    padding:0 1.5rem;
+}
+header ul li a{
+    font-weight: 700;
+    color:#fff;
+}
+header ul li a img{
+    width: 3.5rem;
+}
+header ul li:hover{
+    background-color: #f13c42;
+}
+section{
+    background:url('../assets/profile_bg.png') no-repeat;
+    background-size:100vw 25rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+section .container{
+    width: 80%;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+
+    background-color: #fff;    
+}
+section .container .content{
+    margin:0px 8vw;
+}
+section .container .content .head{
+    display: grid;
+    grid-template-areas:"profile-image . edit" "profile-text . .";
+}
+section .container .content .head .profile-circle{
+    grid-area: profile-image;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    margin-top: -30px;
+    background-color:#fff;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header ul li{
-    margin:10px;
+section .container .content .head .profile-circle img{
+    width: 7rem;
+    height: 7rem;
 }
-header ul li a{
-    color:#fff;
-    font-weight:700;
+section .container .content .head .edit-button{
+    grid-area: edit;
+    margin-top: 2rem;
 }
-header ul li a>img{
-    background-color: lawngreen;
+section .container .content .head .edit-button a{
+    display: flex;
+    justify-content: center;
 }
-header ul li a img{
-    width: 100px;
-    height: 100px;
+section .container .content .head .edit-button a img{
+    width: 2rem;
+    height: 4rem;
 }
+section .container .content .head .profile-text{
+    grid-area: profile-text;
+    margin: 1rem 0;
+}
+section .container .content .head .profile-text h2{
+    font-size: 2.2rem;
+}
+section .communities {
+    display: flex;
+    flex-direction: column;
 
+    margin-top:1rem;
+}
+section .communities h5,
+section .friends h5,
+section .accounts h5{
+    font-size: 1.2rem;
+}
+section .communities .card-group{
+    margin-top: 1rem;
+    display: flex;
+}
+section .communities .card-group .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #000;
+    border-radius: 8px;
+
+    width: 9rem;
+    height: 12rem;
+
+    margin-right:20px;
+    color:#000;
+}
+section .communities .card-group .card img,
+section .friends .pin-group .pin img,
+section .accounts .pin-group .pin img{
+    width: 5rem;
+    height: 6rem;
+}
+section .communities .card-group .card h4{
+    font-size: 1.2rem;
+    text-align: center;
+    width: min-content; 
+}
+section .friends, section .accounts{
+    display: flex;
+    flex-direction: column;
+
+    margin-top:3rem;
+}
+section .friends .pin-group,
+section .accounts .pin-group{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+section .friends .pin-group .pin,
+section .accounts .pin-group .pin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .friends .pin-group .pin p,
+section .accounts .pin-group .pin p{
+    font-weight: 500;
+    font-size: 1.3rem;
+    color:#000;
+}
+section .accounts{
+    margin-bottom: 3rem;
+}
