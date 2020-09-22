@@ -1,0 +1,317 @@
+body{
+    background-color: #eee;
+}
+header{
+    background-color: #F35A5E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem 4rem;
+}
+header img{
+    width:10rem;
+    height: 4rem;
+    padding:0.5rem;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+    height: 11vh;
+    padding:0 1.5rem;
+}
+header ul li a{
+    font-weight: 700;
+    color:#fff;
+}
+header ul li a img{
+    width: 3.5rem;
+}
+header ul li:hover{
+    background-color: #f13c42;
+}
+.topstream{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.topstream .name{
+    position: absolute;
+    bottom: 15%;
+    left: 13%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 91.5%;
+
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+.topstream .views{
+    position: absolute;
+    bottom: 11%;
+    left: 17%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 91.5%;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.topstream .views .icon{
+    position: absolute;
+    left: -20%;
+    bottom: -15%;
+    }
+.topstream .views .icon_a{
+    position: absolute;
+    left: -14.7%;
+    bottom: 20%;
+}
+.topstream .air .text{
+    position: absolute;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 91.5%;
+    /* identical to box height, or 23px */
+    
+    
+    color: #000000;    
+}
+.topstream .air{
+    position: absolute;
+    width: 106px;
+    height: 37px;
+    left: 13%;
+    top: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F35A5E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.topstream .star{
+    position: absolute;
+    left: -22%;
+    top: -60%;
+    
+}
+.topstream .startext{
+    position: absolute;
+    width: 208px;
+    height: 18px;
+    right: 13%;
+    top: 20%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 91.5%;
+
+    color: #F0CF63;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+section .container{
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 40vh;
+    margin-left: 10%;
+
+}
+
+section .trend {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+    /*overflow: auto;
+      overflow: scroll;
+    */
+    margin-top:1rem;
+}
+section .trend h5,
+section .lives h5,
+section .partners h5{
+    font-size: 2rem;
+}
+section .trend .card-group{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+section .trend .card-group .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 312px;
+    height: 380px;
+
+    margin-right:32px;
+    color:#000;
+}
+section .trend .card-group .card img{
+    width: 312px;
+    height: 380px;
+}
+
+section .lives{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+    /*overflow: auto;
+      overflow: scroll;
+    */
+    margin-top:1rem;
+}
+section .lives .live-group{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+
+    display: flex;
+}
+section .lives .live-group .live{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 520px;
+    height: 308px;
+
+    margin-right:32px;
+    color:#000;
+}
+section .lives .live-group .live img{
+    width: 520px;
+    height: 308px;
+}
+section .lives .live-group .live .subtext{
+    display: flex;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+
+    width: 520px;
+
+    color:#000;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+section .lives .live-group .live .subtext .icon{
+ 
+    width: 85px;
+    height: 78px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+section .lives .live-group .live .subtext .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+section .lives .live-group .live .subtext .info .name{
+
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 91.5%;
+
+    color: #F35A5E;
+}    
+section .lives .live-group .live .subtext .info .game{
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 91.5%;
+
+    color: #000000;
+}
+.space{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+section .container .gameover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+section .container .gameover .text{
+
+    width: 900px;
+    height: 46px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 91.5%;
+
+    color: #000000;
+}
+section .container .gameover .button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 335px;
+    height: 53px;
+
+    margin-top: 3rem;
+    margin-left: -7rem;
+
+    background: #F35A5E;
+}
+section .container .gameover .button .buttontext{
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 91.5%;
+    /* identical to box height, or 23px */
+    
+    
+    color: #FFFFFF;
+    
+}
