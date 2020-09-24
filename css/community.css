@@ -78,9 +78,7 @@ section .container .search .text{
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 91.5%;
-    
+    font-size: 25px;
     margin-top: 3.5vh;
 
     margin-left: 2vh;
@@ -89,7 +87,7 @@ section .container .search .text{
 }
 section .container .head{
     font-size: 2rem;
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-bottom: -2vh;
     padding-left: 1vh; 
 

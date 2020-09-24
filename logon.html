@@ -10,64 +10,53 @@
     <title></title>
   </head>
   <body>
-    <div class="container-pacman">
-      <form>
-        <img src="./assets/Rectangle 9.png" alt="" width=20 height=20>
-      </form>
-      <form>
-        <img src="./assets/Rectangle 10.png" alt="" width=20 height=20>
-      </form>
-      <form>
-        <img src="./assets/Rectangle 11.png" alt="" width=20 height=20>
-      </form>
-      <form>
-        <img src="./assets/Rectangle 12.png" alt="" width=20 height=20>
-      </form>
-      <form>
-        <img src="./assets/Rectangle 13.png" alt="" width=20 height=20>
-      </form>
-      <form>
-        <img src="./assets/Rectangle 14.png" alt="" width=20 height=20>
-      </form>
-      <form>
-        <img src="./assets/Rectangle 15.png" alt="" width=20 height=20>
-      </form>
-      <form>
-        <img src="./assets/Rectangle 16.png" alt="" width=20 height=20>
-      </form>
-      <form>
-        <img src="./assets/Rectangle 17.png" alt="" width=20 height=20>
-      </form>
-      </div>
-      <div class="pacman">
-        <form>
-          <img src="./assets/1200px-Pacman 1.png" alt="" width=30 height=30>
-      </form>
-
-    </div>
     <div class="container-login">
-      <section>
-        <h1>Bem Vindo Gamer!</h1>
-        <h2>Autentique-se para dar play</h2>
-        <br>
-      </section>
-      <section id="login">
-        <h3>Email</h3>
-        <form>
-            <input type="text">
-        </form>
-        <br>
-        <h3>Senha</h3>
-        <form>
-            <input type="password">
-        </form>
-        <br>
-      </section>
-      <section>
-        <button type="submit" id="startButton">Press Start</button>
-        <p>Não possui conta?</p>
-        <button type="submit" id="secondButton">Cadastrar</button>
-      </section>
+      <div class="container-pacman">
+        <img src="./assets/Rectangle 9.png" alt="shape" width=20 height=20>
+        <img src="./assets/Rectangle 10.png" alt="shape" width=20 height=20>
+        <img src="./assets/Rectangle 11.png" alt="shape" width=20 height=20>
+        <img src="./assets/Rectangle 12.png" alt="shape" width=20 height=20>
+        <img src="./assets/Rectangle 13.png" alt="shape" width=20 height=20>
+        <img src="./assets/Rectangle 14.png" alt="shape" width=20 height=20>
+        <img src="./assets/Rectangle 15.png" alt="shape" width=20 height=20>
+        <img src="./assets/Rectangle 16.png" alt="shape" width=20 height=20>
+        <img src="./assets/Rectangle 17.png" alt="shape" width=20 height=20>
+        <img class="pacman" src="./assets/1200px-Pacman 1.png" alt="pacman">
+      </div>
+      <div class="container">
+        <div class="header">
+          <h1>Bem Vindo Gamer!</h1>
+          <h2>Autentique-se para dar play.</h2>
+        </div>
+
+        <div id="login">
+          <h3>Email</h3>
+          <form>
+              <input type="text">
+          </form>
+          <br>
+          <h3>Senha</h3>
+          <form>
+              <input type="password">
+          </form>
+          <br>
+        </div>
+        <div class="footer">
+          <button type="submit" id="startButton" onclick="redirect('home')">Press Start</button>
+          <p>Não possui conta?</p>
+          <button type="submit" id="secondButton" onclick="redirect('register')">Cadastrar</button>
+        </div>
+      </div>
+      
     </div>
   </body>
+  <script>
+    function redirect(route){
+      if(route==="home"){
+        window.location.href=window.location.pathname.replace('logon','home')
+      }else{
+        window.location.href=window.location.pathname.replace('logon','register')
+      }
+    }
+  </script>
 </html>

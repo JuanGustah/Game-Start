@@ -12,36 +12,35 @@
     <header>
         <img src="./assets/logo.svg" alt="Logo Game Start">
         <ul>
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#">Streaming</a></li>
-            <li><a href="#">Comunidade</a></li>
+            <li><a href="javascript:window.location.href=window.location.pathname.replace('home','profile')">Perfil</a></li>
+            <li><a href="javascript:window.location.href=window.location.pathname.replace('home','streaming')">Streaming</a></li>
+            <li><a href="javascript:window.location.href=window.location.pathname.replace('home','community')">Comunidade</a></li>
             <li>
-                <a href="#"><img src="./assets/power_icon.svg" alt="logoff"/></a>
+                <a href="javascript:window.location.href=window.location.pathname.replace('home','index')"><img src="./assets/power_icon.svg" alt="logoff"/></a>
             </li>
           </ul>
       </header>
       <section>
-
-
-            <div class="container">
+        <div class="container">
               <div class="cards">
                 <div class="icon">
-                <img src="./assets/power.png" alt="">
+                  <img src="./assets/power.png" alt="">
                   <h4><b>Você</b></h4>
                 </div>
                 <div class="content">
-                  <textarea rows="8" cols="100" placeholder="Escreva uma crítica de um game, um print ou chama alguém para jogar!"> </textarea>
-                  <div class="zap">
+                  <textarea rows="8" cols="100" placeholder="Escreva uma crítica de um game, um print ou chama alguém para jogar!"></textarea>
+                  <div class="row">
                     <div class="callback">
-                      <img src="./assets/add-file 1.png" width="48px" height="48px">
-                      <div class="button">
+                      <a class="file">
+                        <img src="./assets/add-file 1.png">
+                      </a>
+                      <a class="button">
                         Postar
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
                 </div>
-
 
               <div class="cards">
                 <div class="icon">
@@ -49,21 +48,21 @@
                 </div>
                 <div class="post">
                   <h4 class="title"><b>mister_pikachu3</b></h4>
-
-
                   <p>10 min</p>
                   <br>
                   <p><b>Capturado!!!</b></p>
                   <img src="./assets/RHfagp6BS0En6Xq-T8Ua1H-TkmUgaH2TQ3Dg6dRajIY 1.png" alt="">
-                  <div class="zap">
+                  <div class="row">
                     <div class="callback">
                       <div class="button">
-                        <img src="./assets/money.png" alt=""> Dar Cash
+                        <img src="./assets/money.png" alt="money">
+                        <p>Dar Cash</p>
                       </div>
                     </div>
                     <div class="callback">
                       <div class="button">
-                        <img src="./assets/comment.png" alt=""> Comentar
+                        <img src="./assets/comment.png" alt="money">
+                        <p>Comentar</p>
                       </div>
                     </div>
                   </div>
@@ -81,7 +80,7 @@
                     <br>
                     <p><b>Xbox tá com nada nessa geração! Pode vir que o Play station bate de frente facinho facinho...</b></p>
                     <p><b>#xboxjaperdeu #nextgen</b></p>
-                    <div class="zap">
+                    <div class="row">
                       <div class="callback">
                         <div class="button">
                           <img src="./assets/money.png" alt=""> Dar Cash
@@ -99,17 +98,15 @@
 
                   <div class="cards">
                     <div class="icon">
-                      <img src="./assets/pick 1.png" alt="">
+                      <img src="./assets/minecraft_img.svg" alt="">
                     </div>
                     <div class="post">
-
-
                       <h4 class="title"><b>mynicreft</b></h4>
                       <p>25 min</p>
                       <br>
                       <p><b>Vamos relaxar?</b></p>
                       <img src="./assets/word-image-150 1.png" alt="" width="627" height="351">
-                      <div class="zap">
+                      <div class="row">
                         <div class="callback">
                           <div class="button">
                             <img src="./assets/money.png" alt=""> Dar Cash
@@ -135,4 +132,13 @@
     </div>
     </section>
   </body>
+  <script>
+    function redirect(route){
+      if(route==="home"){
+        window.location.href=window.location.pathname.replace('logon','home')
+      }else{
+        window.location.href=window.location.pathname.replace('logon','register')
+      }
+    }
+  </script>
 </html>

@@ -35,38 +35,46 @@ header ul li a img{
 header ul li:hover{
     background-color: #f13c42;
 }
-
-
 section{
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 section .container{
-    width: 90%;
-    margin-top: 5vh;
-    margin-bottom: 40vh;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 1vh;
+  margin-bottom: 10vh;
 }
-
-#BackButton{
-   background-color: #F35A5E;
-   color: white;
-   text-align: center;
-   font-size: 25px;
-   font-weight: bolder;
-   padding: 5px 15px;
+section .container .cards .content .row{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-
-.container-gameover{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+section .container .cards .content .row .callback{
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
 }
-.container-gameover h1{
-  font-size: 30px;
+section .container .cards .content .row .callback .file{
+  width:60px;
+  height: 50px;
 }
-
+section .container .cards .content .row .callback .button{
+  border: 2px #000;
+  background-color: #F35A5E;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 10px 20px;
+}
+section .container .cards .content .row .callback .button img{
+ margin-right: 15px;
+}
 section .container .cards{
   display: flex;
     justify-content: flex-start;
@@ -83,54 +91,22 @@ section .container .cards{
     background: #FFFFFF;
     box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.33);
 }
-
-
-section{
-  display: flex-box;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px #000;
-}
-
-section .container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 7vh;
-  margin-bottom: 10vh;
-}
-
 section .container .cards .icon{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   max-width: 100px;
   max-height: 100px;
+  text-align: center;
 }
-
 section .container .cards .icon img{
     max-width: 100px;
     max-height: 100px;
 }
-
-section .container .cards. .content{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  margin-left: 10%;
-
-  padding-top: 3vh;
-  padding-bottom: 2vh;
-  padding-right: 3vh;
-  padding-left: 3vh;
-
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-
-  background: #FFFFFF;
-  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.33);
+section .container .cards .content textarea{
+  resize: none;
+  font-weight: 600;
+  padding-left: 0.3rem;
 }
 
 section .container .cards .post{
@@ -144,52 +120,42 @@ section .container .cards .post .title{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  color: red;
+  color: #F35A5E;
 }
 
-section .container .cards .post .zap .callback{
+section .container .cards .post .row .callback{
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   margin-right: 10%;
 }
 
-section .container .cards .post .zap{
+section .container .cards .post .row{
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
 }
 
-section .container .cards .post .zap .callback .button{
+section .container .cards .post .row .callback .button{
   margin-top: 20px;
   display: flex;
   align-items: center;
   flex-direction: row;
   font-weight: bolder;
 }
-section .container .cards .content .zap{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  border: 2px #000;
-}
-section .container .cards .content .zap .callback{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  margin-right: 10%;
-  border: 2px #000;
-}
-section .container .cards .content .zap .callback .button{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  margin-right: 10%;
-  border: 2px #000;
+#BackButton{
   background-color: #F35A5E;
   color: white;
   text-align: center;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bolder;
-  padding: 10px 20px;
+  padding: 5px 15px;
+}
+.container-gameover{
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+}
+.container-gameover h1{
+ font-size: 30px;
 }
