@@ -1,0 +1,195 @@
+body{
+    background-color: #eee;
+}
+header{
+    background-color: #F35A5E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem 4rem;
+}
+header img{
+    width:10rem;
+    height: 4rem;
+    padding:0.5rem;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+    height: 11vh;
+    padding:0 1.5rem;
+}
+header ul li a{
+    font-weight: 700;
+    color:#fff;
+}
+header ul li a img{
+    width: 3.5rem;
+}
+header ul li:hover{
+    background-color: #f13c42;
+}
+
+
+section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+section .container{
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 40vh;
+
+}
+
+#BackButton{
+   background-color: #F35A5E;
+   color: white;
+   text-align: center;
+   font-size: 25px;
+   font-weight: bolder;
+   padding: 5px 15px;
+}
+
+.container-gameover{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.container-gameover h1{
+  font-size: 30px;
+}
+
+section .container .cards{
+  display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-right: 3vh;
+    padding-left: 3vh;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    background: #FFFFFF;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.33);
+}
+
+
+section{
+  display: flex-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px #000;
+}
+
+section .container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 7vh;
+  margin-bottom: 10vh;
+}
+
+section .container .cards .icon{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+section .container .cards .icon img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+section .container .cards. .content{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-left: 10%;
+
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  padding-right: 3vh;
+  padding-left: 3vh;
+
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
+  background: #FFFFFF;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.33);
+}
+
+section .container .cards .post{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 5vh;
+}
+
+section .container .cards .post .title{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: red;
+}
+
+section .container .cards .post .zap .callback{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-right: 10%;
+}
+
+section .container .cards .post .zap{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+section .container .cards .post .zap .callback .button{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-weight: bolder;
+}
+section .container .cards .content .zap{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  border: 2px #000;
+}
+section .container .cards .content .zap .callback{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 10%;
+  border: 2px #000;
+}
+section .container .cards .content .zap .callback .button{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 10%;
+  border: 2px #000;
+  background-color: #F35A5E;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 10px 20px;
+}
