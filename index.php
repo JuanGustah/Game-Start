@@ -1,4 +1,4 @@
 <?php
-  include 'start.html';
+  include 'index.html';
 
 ?>
