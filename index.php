@@ -1,5 +1,4 @@
 <?php
-  phpinfo();
-  include 'index.html';
+  include(__DIR__.'/index.html');
 
 ?>
